@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/soft_green">
+
+    <TextView
+        android:id="@+id/pending_exercise_add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/pending_exercise_add_title"
+        style="@style/textTitleStyle"/>     
+    
+	<ScrollView 
+	    android:id="@+id/ScrollView_add_pending_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/button_add_pending_exercise"
+        android:layout_below="@+id/pending_exercise_add_title" >
+    
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+	
+			<LinearLayout
+		        android:id="@+id/linear_layout_pending_exercise_startTime"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		    
+			    <EditText
+			        android:id="@+id/editText_pending_exercise_startTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:ems="10"
+			        android:layout_weight="9"
+			        android:hint="@string/pending_exercise_startTime_hint"
+			        android:inputType="time" >
+			        <requestFocus />
+			    </EditText>
+		
+			    <ImageButton
+			        android:id="@+id/button_select_startTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:contentDescription="@string/pending_exercise_startTime_button"
+			        android:src="@drawable/calendar" />
+		    </LinearLayout>
+		    
+		    <EditText
+		        android:id="@+id/editText_pending_exercise_distance"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentStart="true"
+		        android:layout_alignParentEnd="true"
+        		android:layout_alignParentLeft="true"
+        		android:layout_alignParentRight="true"		        
+		        android:layout_below="@+id/linear_layout_pending_exercise_startTime"
+		        android:layout_marginTop="20dp"
+		        android:ems="10"
+		        android:hint="@string/pending_exercise_distance_hint"
+		        android:inputType="number" />
+	
+			<EditText
+		        android:id="@+id/editText_pending_exercise_duration"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentStart="true"
+		        android:layout_alignParentEnd="true"
+        		android:layout_alignParentLeft="true"
+        		android:layout_alignParentRight="true"		        
+		        android:layout_below="@+id/editText_pending_exercise_distance"
+		        android:layout_marginTop="20dp"
+		        android:ems="10"
+		        android:hint="@string/pending_exercise_duration_hint"
+		        android:inputType="number" />
+	
+			<EditText
+			    android:id="@+id/editText_pending_exercise_comments"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentStart="true"
+			    android:layout_alignParentEnd="true"
+        		android:layout_alignParentLeft="true"
+        		android:layout_alignParentRight="true"			    
+			    android:layout_below="@+id/editText_pending_exercise_duration"
+			    android:ems="10"
+			    android:layout_marginTop="20dp"
+			    android:hint="@string/pending_exercise_comments_hint"
+			    android:inputType="textMultiLine" />
+		</RelativeLayout>
+	</ScrollView>
+	<Button
+	    android:id="@+id/button_add_pending_exercise"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"	    
+	    android:layout_marginBottom="0dp"
+	    android:text="@string/pending_exercise_add_button" 
+		style="@style/buttomStyle"	    
+	    />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Fecha_inicio" />
+
+    <TextView
+        android:id="@+id/textView_distance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_duration_title"
+        android:layout_alignBottom="@+id/textView_duration_title"
+        android:layout_alignLeft="@+id/textView_startTime"
+        android:text="@string/exercise_distance_title" />
+
+    <TextView
+        android:id="@+id/textView_duration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_startTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/exercise_duration_title" />
+    
+    <TextView
+        android:id="@+id/TextView_calories_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_duration_title"
+        android:layout_alignBottom="@+id/textView_duration_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="@string/exercise_calories_title" />
+
+    <TextView
+        android:id="@+id/textView_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_distance_title"
+        android:layout_below="@+id/textView_distance_title"
+        android:layout_marginTop="15dp"
+        android:text="Distance" />
+
+    <TextView
+        android:id="@+id/textView_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_distance"
+        android:layout_alignLeft="@+id/textView_duration_title"
+        android:text="Duración" />
+
+    <TextView
+        android:id="@+id/textView_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_duration"
+        android:layout_alignLeft="@+id/TextView_calories_title"
+        android:text="Calorias" />
+
+    <ImageView
+        android:id="@+id/imageView_sync"
+		android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/textView_distance"
+        android:layout_below="@+id/textView_distance"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/not_sync" />
+
+    <TextView
+        android:id="@+id/textView_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_sync"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView_sync"
+        android:text="No sincronizado" />
+
+</RelativeLayout>

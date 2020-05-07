@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrackSports</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_diary">Diary</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="text_notification_running_app">Application running</string>
+    <string name="text_check_to_exit">Press to go back again</string>
+
+    <!-- INICIO STRINGS PERFILES -->
+    <string name="add_profile_step1">Add profile: Step 1 of 4</string>
+    <string name="add_profile_step2">Add profile: Step 2 of 4</string>
+    <string name="add_profile_step3">Add profile: Step 3 of 4</string>
+    <string name="add_profile_step4">Add profile: Step 4 of 4</string>
+    <string name="button_add_profile">Add profile</string>
+    <string name="login_hint">Enter your login</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="password_repeat_hint">Repeat your password</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="birhtday_hint">Enter your birhtday</string>
+    <string name="button_birthday">Birthday</string>
+    <string name="height_hint">Enter your heigth (cm)</string>
+    <string name="weight_hint">Enter your weigth (kg)</string>
+    <string name="step_length_hint">Enter your step (cm)</string>
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="button_finish">Finist</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="image_picker_description">Profile picture</string>
+    <string name="button_image_picker">Select profile picture</string>
+    <string name="years_measure">years</string>
+    <string name="height_measure">cm.</string>
+    <string name="weight_measure">kg.</string>
+    <string name="image_picker_title_message">Select an option:</string>
+    <string name="image_picker_file">FIle</string>
+    <string name="image_picker_camera">Camera</string>
+    <string name="image_picker_finish_action">Finish action</string>
+    <string name="profile_option_edit">Edit</string>
+    <string name="profile_option_remove">Remove</string>
+    <string name="profile_option_sync">Sync</string>
+    <string name="profile_option_set_default">Set as default profile</string>
+    <string name="profile_option_remove_succesful">Profile has been removed successfully</string>
+    <string name="profile_sync">Sync</string>
+    <string name="profile_not_sync">Not sync</string>
+    <string name="profile_sync_problem">Sync problem</string>
+    <string name="profile_already_sync">Profile already sync</string>
+    <string name="profile_delete_confirmation_title">Delete profile</string>
+    <string name="profile_delete_confirmation_content">Are you sure you want to remove the profile and all associated exercises?</string>
+	<string name="profile_delete_confirmation_ok_button">Accept</string>
+    <string name="profile_delete_confirmation_cance_button">Cancel</string>
+    <!-- FIN STRING PERFILES -->
+
+
+    <!-- INICIO STRINGS INICIO y MAPA -->
+    <string name="dialog_countdown_start_exercise">The exercise is going to start</string>
+    <string name="progress_dialog_save_exercise_title">Saving</string>
+    <string name="progress_dialog_save_exercise_content">Saving the exercise</string>
+    <string name="spinner_chrono_title">Duration</string>
+    <string name="spinner_chrono_time_remaining_title">Time remaining</string>
+    <string name="spinner_distance_title">Distance</string>
+    <string name="spinner_distance_remaining_title">Distance remaining</string>
+    <string name="spinner_speed_title">Current speed</string>
+    <string name="spinner_speed_pace_title">Speed pace</string>
+    <string name="spinner_speed_max_title">Speed max</string>
+    <string name="spinner_speed_avg_title">Speed avg</string>
+    <string name="spinner_steps_title">Steps walked</string>
+    <string name="spinner_calories_burned_title">Calories burned</string>
+    <string name="spinner_calories_burned_pace_title">Calories burned/minute</string>
+    <string name="spinner_step_pace_title">Step pace</string>
+    <string name="spinner_altitude_title">Altitude</string>
+    <string name="spinner_altitude_min_title">Altitude mín</string>
+    <string name="spinner_altitude_max_title">Altitude max</string>
+    <string name="gps_disabled_settings">GPS Settings</string>
+    <string name="gps_disabled_settings_msg">Alert! GPS is disabled, would you turn now?</string>
+    <string name="gps_disabled_settings_ok_button">Settings</string>
+    <string name="gps_disabled_settings_cancel_button">Cancel</string>
+    <string name="finish_tracking_alert">Stop activity</string>
+    <string name="finish_tracking_alert_msg">Are you sure you want to stop the activity?</string>
+    <string name="finish_tracking_alert_ok_button">Acept</string>
+    <string name="finish_tracking_alert_cancel_button">Cancel</string>
+    <string name="default_profile_not_exists_alert">Default user</string>
+    <string name="default_profile_not_exists_alert_msg">No default user, would you like to start the activity anyway?</string>
+    <string name="default_profile_not_exists_alert_ok_button">Acept</string>
+    <string name="default_profile_not_exists_alert_cancel_button">Cancel</string>
+    <!-- FIN STRINGS INICIO y MAPA -->
+
+    <!-- INICIO STRINGS SPEAKER -->
+    <string name="speaker_start_exercise">Start</string>
+    <!-- FIN STRINGS SPEAKER -->
+
+    <!-- INICIO STRINGS ACTIVIDADES -->
+    <string name="tab_diary_list">List</string>
+    <string name="tab_diary_pending_list">Pending</string>
+    <string name="tab_diary_graph">Graph</string>
+    <string name="exercise_distance_title">Distance</string>
+    <string name="exercise_duration_title">Duration</string>
+    <string name="exercise_calories_title">Calories</string>
+    <string name="exercise_option_sync">Sync</string>
+    <string name="exercise_option_remove">Delete</string>
+    <string name="exercise_option_title_message">Select an option:</string>
+    <string name="hours">h</string>
+    <string name="minutes">min</string>
+    <string name="seconds">s</string>
+    <string name="meters">m</string>
+    <string name="kilometers">km</string>
+    <string name="altitude_measure">m</string>
+    <string name="speed_measure">km/h</string>
+    <string name="speed_pace_measure">min/km</string>
+    <string name="step_pace_measure">steps/min</string>
+    <string name="calories_measure">kcal</string>
+    <string name="exercise_sync">Sync</string>
+    <string name="exercise_not_sync">Not sync</string>
+    <string name="exercise_sync_problem">Sync problem</string>
+    <string name="button_add_exercise">Add exercise</string>
+    <string name="tab_exercise_summary">Symmary</string>
+    <string name="tab_exercise_graph">Graphs</string>
+    <string name="tab_exercise_route">Route</string>
+    <string name="exercise_detail_startTime">Start time:</string>
+    <string name="exercise_detail_duration">Duration:</string>
+    <string name="exercise_detail_distance">Distance:</string>
+    <string name="exercise_detail_speedAvg">Speed avg:</string>
+    <string name="exercise_detail_speedMax">Speed max:</string>
+    <string name="exercise_detail_speedPace">Speed pace:</string>
+    <string name="exercise_detail_altitudeMin">Altitude min:</string>
+    <string name="exercise_detail_altitudeMax">Altitude max:</string>
+    <string name="exercise_detail_caloriesBurned">Calories burned:</string>
+    <string name="exercise_detail_steps">Steps walked:</string>
+    <string name="graph_duration_title">Duration</string>
+    <string name="graph_distance_title">Distance</string>
+    <string name="graph_speed_pace_title">Speed pace</string>
+    <string name="graph_speed_title">Speed avg</string>
+    <string name="graph_calories_title">Calories</string>
+    <string name="graph_altitude_title">Altitude avg</string>
+    <string name="graph_distance_label">Distance (km)</string>
+    <string name="graph_altitude_label">Altitude (m)</string>
+    <string name="graph_speed_pace_label">Speed pace (min/km)</string>
+    <string name="graph_speed_label">Speed (km/h)</string>
+    <string name="graph_time_label">Time (h:min)</string>
+    <string name="graph_day_label">Date (day/month)</string>
+    <string name="graph_calories_label">Calories (kcal)</string>
+    <string name="exercise_option_remove_succesful">Exercise remove successful</string>
+    <string name="pending_exercise_add_title">Add exercise</string>
+    <string name="pending_exercise_startTime_hint">Start time</string>
+    <string name="pending_exercise_startTime_button">Select start time</string>
+    <string name="pending_exercise_duration_hint">Duration (min)</string>
+    <string name="pending_exercise_distance_hint">Distance (km)</string>
+    <string name="pending_exercise_comments_hint">Comments</string>
+    <string name="pending_exercise_add_button">Add</string>
+    <string name="pending_exercise_comments_title">Comments</string>
+    <string name="pending_exercise_no_comments">No comments</string>
+    <string name="pending_exercise_option_title_message">Select an option:</string>
+    <string name="pending_exercise_option_remove_succesful">Pending exercise removed successful</string>
+    <string name="date_time_picker_title">Select start time</string>
+    <string name="date_time_picker_cancel_button">Cancel</string>
+    <string name="date_time_picker_accept_button">Accept</string>
+    <string name="notification_pending_exercise_remaining">%1$s minutes to run the exercise</string>
+    <string name="notification_pending_exercise_last_minute">Is going to run exercise less than 1 minute</string>
+    <string name="notification_discard_button">Discard</string>
+    <string name="notification_start_button">Start NOW!</string>
+    <string name="exercise_already_sync">Exercise already sync</string>
+    <string name="all_exercises_already_sync">All exercises sync</string>
+    <string name="exercise_delete_confirmation_title">Remove exercise</string>
+    <string name="exercise_delete_confirmation_content">Are you sure you want to delete the exercise? </string>
+	<string name="exercise_delete_confirmation_ok_button">Accept</string>
+    <string name="exercise_delete_confirmation_cance_button">Cancel</string>
+    <string name="pending_exercise_delete_confirmation_title">Remove pending exercise</string>
+    <string name="pending_exercise_delete_confirmation_content">Are you sure you want to delete the pending exercise?</string>
+	<string name="pending_exercise_delete_confirmation_ok_button">Accept</string>
+    <string name="pending_exercise_delete_confirmation_cance_button">Cancel</string>
+    <!-- FIN STRINGS ACTIVIDADES -->
+
+	<!-- INICIO SINCRONIZACION PLATAFORMA -->
+    <string name="progress_dialog_autentication_title">Authenticating</string>
+    <string name="progress_dialog_autentication_content">Autenticando user</string>
+    <string name="progress_dialog_registration_title">Registering</string>
+    <string name="progress_dialog_registration_content">Registering user</string>
+    <string name="progress_dialog_edit_title">Editing</string>
+    <string name="progress_dialog_edit_content">Editing user</string>
+	<string name="progress_dialog_sync_profile_title">Synchronizing</string>
+    <string name="progress_dialog_sync_profile_content">Synchronizing user</string>
+   	<string name="progress_dialog_sync_exercise_title">Synchronizing</string>
+    <string name="progress_dialog_sync_exercise_content">Synchronizing exercise</string>
+    <string name="progress_dialog_sync_exercises_content">Synchronizing exercises</string>
+    <string name="http_status_not_sync">Not sync</string>
+    <string name="http_status_connection_timeout">Connection error</string>
+    <string name="http_status_socket_timeout">Connection error</string>
+    <string name="http_status_authentication_ok">Authentication successful</string>
+    <string name="http_status_authentication_ko">Authentication failed</string>
+    <string name="http_status_registration_ok">Registration successful</string>
+    <string name="http_status_registration_ko">Registration failed</string>
+    <string name="http_status_edit_ok">Edition successful</string>
+    <string name="http_status_edit_ko">Edition failed</string>
+    <string name="http_sync_exercise_ok">Synchronization successful</string>
+    <string name="http_sync_exercise_ko">Synchronization failed</string>
+    <string name="http_status_user_not_valid">User not exists</string>
+    <string name="http_status_password_not_valid">Invalid password</string>
+	<!-- FIN SINCRONIZACION PLATAFORMA -->
+
+	<!-- INICIO SINCRONIZACION GOOGLE FIT -->
+	<string name="session_identifier">Exercise %1$s</string>
+	<string name="session_steps">Steps walked</string>
+	<string name="session_calories">Calories burned</string>
+	<string name="session_distance">Distance traveled</string>
+	<string name="session_location">Location</string>
+	<!-- FIN SINCRONIZACION GOOGLE FIT -->
+
+	<!-- INICIO SETTINGS -->
+	<string name="settings_general">General settings</string>
+	<string name="settings_notification">Notification settings</string>
+	<string name="settings_map">Map settings</string>
+	<string name="settings_clock">Clock settings</string>
+	<string name="settings_sync">Sync settings</string>
+	<string name="settings_google_fit">Google Fit settings</string>
+	<string name="settings_sound">Sound</string>
+	<string name="settings_vibrate">Vibration</string>
+	<string name="settings_notifications_check_pending_exercises">Execution frequency (hours)</string>
+	<string name="settings_notifications_check_pending_exercises_close">Execution frequency close (minutes)</string>
+	<string name="settings_notifications_send_notification_time">Notification time (minutes)</string>
+	<string name="settings_map_update_freq_meters">Update frequency (meters)</string>
+	<string name="settings_map_update_freq_seconds">Update frequency (sec)</string>
+	<string name="settings_map_default_zoom">Default zoom</string>
+	<string name="settings_map_save_points">Storage (%)</string>
+	<string name="settings_map_type">Map type</string>
+	<string name="settings_map_type_normal">Normal</string>
+	<string name="settings_map_type_satellite">Satellite</string>
+	<string name="settings_map_type_hybrid">Hybrid</string>
+	<string name="settings_map_type_terrain">Terrain</string>
+	<string name="settings_clock_countdown">Countdown (sec)</string>
+	<string name="settings_clock_miliseconds">Show miliseconds</string>
+	<string name="settings_sync_url">Url</string>
+	<string name="settings_sync_timeout">Timeout (sec)</string>
+	<string name="settings_sync_https">Https</string>
+	<string name="settings_sync_crypt_pass">Crypt pass</string>
+	<string name="settings_sync_auto">Auto sync</string>
+	<string name="settings_google_fit_timeout">Timeout (sec)</string>
+	<string name="settings_google_fit_sync">Sync</string>
+	<string name="settings_save_preferences">Save</string>
+	<string name="settings_save_preferences_success">Configuration has been saved</string>
+	<!-- FIN SETTINGS -->
+
+	<!-- INICIO VALIDACIONES -->
+	<string name="validate_login_not_valid">Has not entered any user</string>
+	<string name="validate_login_already_exists">User already exists</string>
+	<string name="validate_password_not_valid">Has not entered any password</string>
+	<string name="validate_password_not_match">Passwords do not match</string>
+	<string name="validate_name_not_valid">Has not entered any name</string>
+	<string name="validate_birthday_not_valid">Has not entered any birthday</string>
+	<string name="validate_birthday_invalid_value">Invalid birthday</string>
+	<string name="validate_height_not_valid">Has not entered any heigh</string>
+	<string name="validate_height_invalid_value">Invalid height</string>
+	<string name="validate_weight_not_valid">Has not entered any weigth</string>
+	<string name="validate_weight_invalid_value">Invalid weigth</string>
+	<string name="validate_step_not_valid">Has not entered any step</string>
+	<string name="validate_step_invalid_value">Invalid step</string>
+	<string name="validate_pending_exercise_startTime">Has not entered any start time</string>
+	<string name="validate_pending_exercise_startTime_not_valid">Invalid start time</string>
+	<string name="validate_pending_exercise_startTime_previous_now">The date entered is less than the current date</string>
+	<!-- FIN VALIDACIONES -->
+
+</resources>

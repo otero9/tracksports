@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost_diary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                
+			    <include
+			        android:id="@+id/tab1"
+					android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+			        layout="@layout/diary_exercises_summary" 
+					android:visibility="invisible"/>
+
+				<include
+			        android:id="@+id/tab2"
+					android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+			        layout="@layout/diary_pending_exercises" 
+					android:visibility="invisible"/>
+			    
+			    <include
+			        android:id="@+id/tab3"
+					android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+			        layout="@layout/diary_exercises_graph" 
+					android:visibility="invisible"/>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
