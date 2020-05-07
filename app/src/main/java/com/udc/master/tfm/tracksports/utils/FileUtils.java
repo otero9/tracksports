@@ -212,9 +212,10 @@ public class FileUtils {
             cursor = context.getContentResolver().query(uri, projection, selection, selectionArgs,
                     null);
             if (cursor != null && cursor.moveToFirst()) {
+                /*
                 if (DEBUG)
                     DatabaseUtils.dumpCursor(cursor);
-
+                */
                 final int column_index = cursor.getColumnIndexOrThrow(column);
                 return cursor.getString(column_index);
             }
@@ -241,7 +242,7 @@ public class FileUtils {
      */
     @SuppressLint("NewApi")
     public static String getPath(final Context context, final Uri uri) {
-
+        /*
         if (DEBUG)
             Log.d(TAG + " File -",
                     "Authority: " + uri.getAuthority() +
@@ -252,7 +253,7 @@ public class FileUtils {
                             ", Host: " + uri.getHost() +
                             ", Segments: " + uri.getPathSegments().toString()
                     );
-
+        */
         final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
 
         // DocumentProvider
@@ -409,9 +410,10 @@ public class FileUtils {
      * @author paulburke
      */
     public static Bitmap getThumbnail(Context context, Uri uri, String mimeType) {
+        /*
         if (DEBUG)
             Log.d(TAG, "Attempting to get thumbnail");
-
+        */
         if (!isMediaUri(uri)) {
             Log.e(TAG, "You can only retrieve thumbnails for images and videos.");
             return null;
@@ -425,9 +427,10 @@ public class FileUtils {
                 cursor = resolver.query(uri, null, null, null, null);
                 if (cursor.moveToFirst()) {
                     final int id = cursor.getInt(0);
+                    /*
                     if (DEBUG)
                         Log.d(TAG, "Got thumb ID: " + id);
-
+                    */
                     if (mimeType.contains("video")) {
                         bm = MediaStore.Video.Thumbnails.getThumbnail(
                                 resolver,
@@ -444,8 +447,10 @@ public class FileUtils {
                     }
                 }
             } catch (Exception e) {
+                /*
                 if (DEBUG)
                     Log.e(TAG, "getThumbnail", e);
+                 */
             } finally {
                 if (cursor != null)
                     cursor.close();

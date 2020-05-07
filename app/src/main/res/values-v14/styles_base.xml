@@ -197,24 +197,20 @@
 
     <!-- Search View result styles -->
 
-    <style name="TextAppearance.AppCompat.Base.SearchResult.Title"
-           parent="@android:TextAppearance.Holo.SearchResult.Title">
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Title">
     </style>
 
-    <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle"
-            parent="@android:TextAppearance.Holo.SearchResult.Subtitle">
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle">
     </style>
 
     <!--
         TextAppearance.Holo.Light.SearchResult.* are private so we extend from the default
         versions instead (which are exactly the same).
     -->
-    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title"
-           parent="@android:TextAppearance.Holo.SearchResult.Title">
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title">
     </style>
 
-    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle"
-           parent="@android:TextAppearance.Holo.SearchResult.Subtitle">
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle">
     </style>
 
     <style name="Widget.AppCompat.Base.ActivityChooserView" parent="">

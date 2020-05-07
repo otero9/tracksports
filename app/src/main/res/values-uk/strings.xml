@@ -220,7 +220,7 @@
     <string name="session_steps">Pasos recorridos</string>
     <string name="session_calories">Calorias consumidas</string>
     <string name="session_distance">Distancia Recorrida</string>
-    <string name="session_">Localizacion</string>
+    <string name="session_location">Localizacion</string>
     <!-- FIN SINCRONIZACION GOOGLE FIT -->
 
     <!-- INICIO SETTINGS -->

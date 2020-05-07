@@ -61,16 +61,15 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/imageView_profile"
         android:src="@drawable/not_sync" />    
-    
+
     <TextView
         android:id="@+id/textView_status_sync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView_sync"
         android:layout_below="@+id/imageView_profile"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@+id/imageView_status_sync"
         android:text="No sincronizado" />
-    
+
 </RelativeLayout>
