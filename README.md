@@ -1,6 +1,6 @@
 # TrackSports
 
-### Table of Contents
+### Index
 
 1. [Explicación del proyecto/app](https://github.com/otero9/tracksports/wiki/Tracksports:-App-para-el-control-y-registro-de-la-actividad-f%C3%ADsica)
 
