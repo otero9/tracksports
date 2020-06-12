@@ -6,24 +6,25 @@
 
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
     <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-
+    <!--
     <permission android:name="com.udc.master.tfm.tracksports.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
-    <uses-permission android:name="com.udc.master.tfm.tracksports..permission.MAPS_RECEIVE"/>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.udc.master.tfm.tracksports.permission.MAPS_RECEIVE"/> -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/running"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" android:requestLegacyExternalStorage="true" >
 
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
@@ -66,8 +67,6 @@
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme">
         </activity>
-
-        <!--  @android:style/Theme.Holo.Light.NoActionBar -->
 
         <service android:name="com.udc.master.tfm.tracksports.alarm.AlarmService" android:enabled="true" />
         <receiver android:name="com.udc.master.tfm.tracksports.alarm.AlarmReceiver"/>

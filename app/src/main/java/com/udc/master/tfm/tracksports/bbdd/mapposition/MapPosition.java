@@ -3,7 +3,10 @@ package com.udc.master.tfm.tracksports.bbdd.mapposition;
 import java.io.Serializable;
 
 import com.udc.master.tfm.tracksports.directcom.rest.object.RoutePointWS;
+
+import android.content.Context;
 import android.location.Location;
+import android.location.LocationManager;
 
 /**
  * Clase que representa una coordenada del mapa en la aplicacion
@@ -37,7 +40,9 @@ public class MapPosition implements Serializable {
 	/**
 	 * Constructor vacio
 	 */
-	public MapPosition() {}
+	public MapPosition() {
+
+	}
 	
 	/**
 	 * Constructor con parametros

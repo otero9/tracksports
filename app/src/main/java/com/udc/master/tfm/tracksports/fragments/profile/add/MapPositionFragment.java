@@ -36,6 +36,7 @@ public class MapPositionFragment extends AddProfileAbstractFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+
 		View mapPositionView = inflater.inflate(R.layout.fragment_map_position, container, false);
 		
 		setPreviousButton((ImageButton) mapPositionView.findViewById(R.id.button_map_position_previous));
@@ -73,11 +74,15 @@ public class MapPositionFragment extends AddProfileAbstractFragment {
 		//evitar problemas con fragmento dentro de otros fragmentos y problemas
 		//de rendimiento
 		FragmentManager fm = getChildFragmentManager();
-		mapFragment = (GoogleMapFragment) fm.findFragmentById(R.id.map_position_layout);
-		if (mapFragment == null) {
-			mapFragment = new GoogleMapPositionFragment();
-			fm.beginTransaction().replace(R.id.map_position_layout, mapFragment).commit();
-		}
+
+		mapFragment = new GoogleMapPositionFragment();
+		fm.beginTransaction().replace(R.id.map_position_layout, mapFragment).commit();
+
+		//mapFragment = (GoogleMapFragment) fm.findFragmentById(R.id.map_position_layout);
+		//if (mapFragment == null) {
+		//	mapFragment = new GoogleMapPositionFragment();
+		//	fm.beginTransaction().replace(R.id.map_position_layout, mapFragment).commit();
+		//}
 		
 		fillParams();
 	}

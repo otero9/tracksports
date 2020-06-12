@@ -19,7 +19,7 @@
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="white">#FFFFFF</color>
     <color name="dark_green">#18711F</color>
-    <color name="ligth_green">#23B52F</color>
+    <color name="ligth_green">#78B37A</color>
     <color name="soft_green">#E6FFE8</color>
     <color name="ligth_grey">#CDD0CD</color>
 </resources>

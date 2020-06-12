@@ -1,7 +1,6 @@
 package com.udc.master.tfm.tracksports.fragments.home;
 
 import java.util.Date;
-
 import android.app.AlertDialog;
 import android.app.Application;
 import android.app.ProgressDialog;
@@ -44,7 +43,6 @@ import com.udc.master.tfm.tracksports.utils.preferences.PreferencesUtils;
  * @author a.oteroc
  *
  */
-@SuppressWarnings("deprecation")
 public class HomeFragment extends UpdatableRunningFragment {
 	/** Boton para iniciar/resumir/pausar la actividad */
 	private ImageButton startButton;
@@ -71,7 +69,7 @@ public class HomeFragment extends UpdatableRunningFragment {
 	 * Constructor vacio
 	 */
 	public HomeFragment() {}
-	
+
 	/**
 	 * Constructor del fragmento
 	 * @param locationTracker
@@ -274,11 +272,15 @@ public class HomeFragment extends UpdatableRunningFragment {
 	 */
 	private void start(Resources resources) {
 		//Se crea un Lock para mantener la ejecucion del ejercicio
+		//PowerManager powerManager = (PowerManager) getActivity().getSystemService(Application.POWER_SERVICE);
+		//wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLock");
+		//if (!wakeLock.isHeld()) {
+		//	wakeLock.acquire();
+		//}
 		PowerManager powerManager = (PowerManager) getActivity().getSystemService(Application.POWER_SERVICE);
-		wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLock");
-		if (!wakeLock.isHeld()) {
-			wakeLock.acquire();
-		}
+		wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+				"MyApp::MyWakelockTag");
+		wakeLock.acquire();
 		//Se inicia el cronometro
 		chrono.start();
 		if (isAutoStart() && isUseTimeRemaining()) {

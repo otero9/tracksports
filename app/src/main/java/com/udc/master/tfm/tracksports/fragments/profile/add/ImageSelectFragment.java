@@ -113,16 +113,17 @@ public class ImageSelectFragment extends AddProfileAbstractFragment {
 		    }
 		});
     	final AlertDialog dialog = builder.create();
-		
-		
-		//Se muestra el dialogo para elegir imagen
-		imagePickerButton.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				dialog.show();
-			}
-		});
-		
+
+    // Se muestra el dialogo para elegir imagen
+    imagePickerButton.setOnClickListener(
+        new OnClickListener() {
+          @Override
+          public void onClick(View arg0) {
+            dialog.show();
+            fillParams();
+          }
+        });
+		fillParams();
 		//Se navega al fragmento de detalles de usuario
 		getPreviousButton().setOnClickListener(new OnClickListener() {
 			@Override
@@ -131,8 +132,8 @@ public class ImageSelectFragment extends AddProfileAbstractFragment {
 				getActivity().getSupportFragmentManager().beginTransaction()
 				.replace(R.id.container, new UserDetailsFragment()).commit();
 			}
-		});	
-		
+		});
+		fillParams();
 		//Se navega al fragmento de seleccionar las coordenadas de la casa
 		getNextButton().setOnClickListener(new OnClickListener() {
 			@Override
@@ -141,8 +142,8 @@ public class ImageSelectFragment extends AddProfileAbstractFragment {
 				getActivity().getSupportFragmentManager().beginTransaction()
 				.replace(R.id.container, new MapPositionFragment()).commit();
 			}
-		});	
-		
+		});
+		fillParams();
 		return imageSelectView;
 	}
 	

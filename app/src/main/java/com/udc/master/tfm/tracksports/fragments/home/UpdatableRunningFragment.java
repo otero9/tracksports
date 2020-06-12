@@ -42,7 +42,7 @@ import com.udc.master.tfm.tracksports.utils.preferences.PreferencesTypes;
 import com.udc.master.tfm.tracksports.utils.preferences.PreferencesUtils;
 
 /**
- * Clase abstacta que engloba los fragmentos en los que se actualizara la informacion del recorrido
+ * Clase abstracta que engloba los fragmentos en los que se actualizara la informacion del recorrido
  * @author a.oteroc
  *
  */
