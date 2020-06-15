@@ -1,8 +1,6 @@
 # TrackSports
 
-### Index
-
-### Welcome to the TrackSports wiki!
+### Welcome to the TrackSports!
 
 ## Index
 
